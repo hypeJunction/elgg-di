@@ -76,7 +76,7 @@ class PublicContainer {
 	 * @return array
 	 */
 	public static function getDefinitions() {
-		$root = dirname(dirname(dirname(__FILE__)));
+		$root = dirname(dirname(dirname(dirname(__FILE__))));
 
 		$definitions = ["$root/config/di.php"];
 
