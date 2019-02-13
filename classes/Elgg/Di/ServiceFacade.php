@@ -19,7 +19,7 @@ trait ServiceFacade {
 	 */
 	public static function instance() {
 		$name = static::name();
-		return elgg()->$name;
+		return elgg_di()->$name;
 	}
 
 	/**

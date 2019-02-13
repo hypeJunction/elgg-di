@@ -59,7 +59,7 @@ interface PluginBootstrapInterface {
 	 * Returns Elgg's public DI container
 	 * @return PublicContainer
 	 */
-	public function elgg();
+	public function dic();
 
 	/**
 	 * Returns plugin entity this bootstrap is related to

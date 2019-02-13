@@ -34,7 +34,7 @@ abstract class PluginBootstrap implements PluginBootstrapInterface {
 	/**
 	 * {@inheritdoc}
 	 */
-	public function elgg() {
+	public function dic() {
 		return $this->dic;
 	}
 
