@@ -1,3 +1,13 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/hypeJunction/elgg-di/compare/1.0.2...1.0.3) (2019-02-13)
+
+
+### Bug Fixes
+
+* **api:** fix method call names ([e5cfa58](https://github.com/hypeJunction/elgg-di/commit/e5cfa58))
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/hypeJunction/elgg-di/compare/1.0.1...1.0.2) (2019-02-13)
 
