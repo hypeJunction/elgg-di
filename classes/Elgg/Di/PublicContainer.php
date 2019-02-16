@@ -2,6 +2,8 @@
 
 namespace Elgg\Di;
 
+use Elgg\Includer;
+
 /**
  * @method call
  */
@@ -120,4 +122,33 @@ class PublicContainer {
 	public static function flush() {
 		_elgg_rmdir(static::getCompilationPath(), true);
 	}
+
+	/**
+	 * Get plugin config
+	 * @return array
+	 */
+	public static function getConfig() {
+		$root = dirname(dirname(dirname(dirname(__FILE__))));
+
+		$definitions = ["$root/config/config.php"];
+
+		$plugins = elgg_get_plugins();
+
+		foreach ($plugins as $plugin) {
+			$path = $plugin->getPath();
+			$conf = "{$path}config/config.php";
+
+			if (file_exists($conf) && is_readable($conf)) {
+				$config = Includer::requireFile($conf);
+				if (is_array($config)) {
+					foreach ($config as $key => $value) {
+						elgg_set_config($key, $value);
+					}
+				}
+			}
+		}
+
+		return $definitions;
+	}
+
 }

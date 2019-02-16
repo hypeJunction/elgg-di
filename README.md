@@ -21,3 +21,8 @@
 
  * To disable container compilation/caching - set `$CONFIG->environment = 'development'`
 
+### Plugin Config
+
+ * You can set site-wide config by creating ``oonfig/config.php`` in your plugin, and 
+ returning an array of key value pairs. Note that plugins with higher priority with override
+ config previously defined in other plugins.
