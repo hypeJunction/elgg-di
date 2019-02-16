@@ -102,6 +102,8 @@ class PublicContainer {
 	 * @throws \Exception
 	 */
 	public static function create() {
+		static::getConfig();
+		
 		$builder = new \DI\ContainerBuilder();
 
 		if (elgg_get_config('environment') !== 'development') {
