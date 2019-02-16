@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/hypeJunction/elgg-di/compare/1.0.3...1.1.0) (2019-02-16)
+
+
+### Features
+
+* **config:** allow plugins to define config ([7b8c967](https://github.com/hypeJunction/elgg-di/commit/7b8c967))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/hypeJunction/elgg-di/compare/1.0.2...1.0.3) (2019-02-13)
 
