@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/hypeJunction/elgg-di/compare/1.1.0...1.1.1) (2019-02-16)
+
+
+### Bug Fixes
+
+* **config:** load config when container is created ([1007be9](https://github.com/hypeJunction/elgg-di/commit/1007be9))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/hypeJunction/elgg-di/compare/1.0.3...1.1.0) (2019-02-16)
 
