@@ -10,6 +10,4 @@ if (!function_exists('elgg_di')) {
 	}
 };
 
-\Elgg\Application::start();
-
-elgg_register_event_handler('cache:flush', 'system', '\Elgg\Di\PublicContainer::flush');
+\Elgg\Di\PublicContainer::start();

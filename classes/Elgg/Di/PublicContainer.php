@@ -19,6 +19,11 @@ class PublicContainer {
 	static $instance;
 
 	/**
+	 * @var static
+	 */
+	static $started;
+
+	/**
 	 * Container constructor
 	 *
 	 * @param \DI\Container $container
@@ -153,4 +158,19 @@ class PublicContainer {
 		return $definitions;
 	}
 
+	/**
+	 * Start public container
+	 * @return void
+	 */
+	public static function start() {
+		if (self::$started) {
+			return;
+		}
+
+		self::$started = true;
+
+		\Elgg\Application::start();
+
+		elgg_register_event_handler('cache:flush', 'system', '\Elgg\Di\PublicContainer::flush');
+	}
 }
