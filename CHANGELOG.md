@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/hypeJunction/elgg-di/compare/1.1.1...1.1.2) (2019-05-24)
+
+
+### Bug Fixes
+
+* **init:** make sure app is only started once ([11a9972](https://github.com/hypeJunction/elgg-di/commit/11a9972))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/hypeJunction/elgg-di/compare/1.1.0...1.1.1) (2019-02-16)
 
